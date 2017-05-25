@@ -1,0 +1,110 @@
+			html{
+				overflow-x:hidden;
+			}
+			*{
+				margin:0; 
+				padding:0;
+				box-sizing:
+				border-box;
+			}
+			.mainWrap{
+				background:#f00;
+				width:100%;
+				height:1500px;
+				transition:all 0.3s ease-out;
+			}
+			.open{
+				transform:translateX(250px);				
+			}
+			header{
+				background:#fff;
+				height:100px;
+				text-align:center;	
+				transition:all .3s ease-out;
+				z-index:20;
+			}
+			.sticky{
+				position:fixed;
+				top:0px; left:0;width:100%;
+				height:50px;
+			}
+			header .menu{
+				width:30px;
+				height:30px;
+				float:left;
+				margin:40px 0 0 10px;
+				transition:all .3s ease-out;
+			}
+			header.sticky .menu{
+				margin-top:10px;
+			}			
+			header .menu:before{
+				content:"";
+				display:block;
+				height:3px;
+				width:30px;
+				background:#f00;
+			}
+			header .menu:after{
+				content:"";
+				width:30px;
+				height:8px;
+				margin-top:8px;
+				display:block;
+				border-top:3px solid #f00;
+				border-bottom:3px solid #f00;   
+			}
+			header .logo{
+				display:inline-block;
+				font-size:30px;
+				vertical-align:baseline;
+				margin-top:30px;
+				transition:all .3s ease-out;
+			}
+			header.sticky .logo{
+				margin-top:5px;
+			}
+			.left-menu{
+				position:fixed;
+				background:#00fc00;  
+				width:250px;
+				height:100%;
+				transform: translateX(-250px);
+				z-index:10;
+			}
+			.btn-up{
+				position:fixed;
+				right:10px;
+				bottom:-80px;
+				width:50px;
+				height:50px;
+			}
+			.point{
+				cursor:pointer;
+			}
+			.main-image{
+				height:130px;
+				background:url("../images/sub_main.png") no-repeat top center;
+				background-attachment:fixed;
+			}
+			
+/*스크롤 위치 바*/
+			.scrollposbar{
+				position:fixed;
+				height:3px;
+				width:100%;
+				background-color:#fff;
+				top:0;
+				left:0;
+				z-index:100;
+			}			
+			.scrollbar{
+				position:absolute;
+				height:3px;
+				width:100%;
+				background-color:#3498db;
+				left:-100%;
+			}
+			
+
+			
